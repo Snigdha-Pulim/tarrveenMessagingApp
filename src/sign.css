@@ -1,0 +1,31 @@
+.sbutton{
+    background-color: blueviolet;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+}
+
+.sign_up_div{
+    padding: 00.5cm;
+}
+
+.sbut{
+    background-color: blueviolet;
+    margin: 0.5cm;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+}
+
+.frow{
+    margin-bottom: .25cm;
+}
+
+.errorMessage{
+    color: tomato;
+    margin-bottom: .25cm;
+}
