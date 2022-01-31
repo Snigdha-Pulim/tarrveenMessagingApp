@@ -5,7 +5,7 @@ li a {
 .navB {
   margin: 0;
   padding: 0.5cm;
-  background-color: black;
+  background-color: rgb(236, 154, 181);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -18,10 +18,20 @@ li a {
 .daC {
   margin-top: 2cm;
 }
+.sI{
+  width: .9cm;
+  height: .9cm;
+  margin-right: .25cm;
+}
 
+.sIs{
+  width: .8cm;
+  height: .8cm;
+  margin-right: .25cm;
+}
 .boxD {
   height: 5cm;
-  background-color: burlywood;
+  background-color: rgb(241, 206, 160);
   width: 76%;
   margin-left: 12%;
   margin-right: 12%;
@@ -29,6 +39,12 @@ li a {
   border-radius: 25px;
   padding: 0.5cm;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hedboxD{
+  font-weight: bold;
+  margin-bottom: .25cm;
 }
 
 .pc {
@@ -38,19 +54,31 @@ li a {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: cornflowerblue;
+  background-color: rgb(190, 208, 241);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.youC{
+  background-color: rgb(153, 183, 238);
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:2cm;
+  padding: 1cm;
+  border-radius: 15px;
 }
 
 .inpc {
   margin-bottom: 0.25cm;
-  background-color: crimson;
   border-radius: 15px;
   padding: 0.2cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .chanboxinpc {
   max-height: 2.5cm;
   overflow-y: scroll;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tags {
@@ -81,4 +109,5 @@ li a {
   color: green;
   text-align: center;
   text-size-adjust: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import axios from "axios";
+import Data from "./db.json";
 
 class SignIn extends Component {
   constructor() {
@@ -24,9 +25,7 @@ class SignIn extends Component {
   };
 
   componentDidMount = () => {
-    axios.get("http://localhost:3000/users").then((response) => {
-      this.setState({ users: response.data });
-    });
+    this.setState({ users: Data.users });
   };
 
   checkdetails = () => {
@@ -39,24 +38,21 @@ class SignIn extends Component {
       if (this.state.username == this.state.users[i].username) {
         userExist = true;
         if (this.state.password != this.state.users[i].password) {
-          passwordWrong=true;
+          passwordWrong = true;
         }
         break;
       }
     }
-    if(!userExist){
-      userNoExist=true;
+    if (!userExist) {
+      userNoExist = true;
     }
     this.setState(
       {
-        usernameDoesNotExist:userNoExist,
-        incorrectPassword:passwordWrong
+        usernameDoesNotExist: userNoExist,
+        incorrectPassword: passwordWrong
       },
       () => {
-        if (
-          !this.state.usernameDoesNotExist &&
-          !this.state.incorrectPassword
-        ) {
+        if (!this.state.usernameDoesNotExist && !this.state.incorrectPassword) {
           this.props.logedIn(this.state.username);
         }
       }

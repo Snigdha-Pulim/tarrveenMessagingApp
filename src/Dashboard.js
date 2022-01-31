@@ -5,6 +5,10 @@ import Dash from "./Dash.js";
 import Profile from "./Profile.js";
 import Yourchannels from "./Yourchannels";
 import Createchannels from "./Createchannels";
+import prI from './user.png';
+import dasI from './dashboard.png';
+import edI from './edit.png';
+import tV from './broadcast.png';
 
 class Dashboard extends Component {
   constructor() {
@@ -13,7 +17,7 @@ class Dashboard extends Component {
       dash: true,
       profile: false,
       channels: false,
-      creatChannel: false
+      creatChannel: false,
     };
   }
 
@@ -61,33 +65,33 @@ class Dashboard extends Component {
         <div className="col-3 navB">
           <button
             type="button"
-            class="btn btn-secondary btn-lg btn-block"
+            class="btn btn-lg btn-block"
             onClick={this.dashboardButton}
-          >
-            Dashboard
+          ><img src={dasI} className="sI" alt="Logo" />
+              Dashboard
           </button>
           <br></br>
           <button
             type="button"
-            class="btn btn-secondary btn-lg btn-block"
+            class="btn btn-lg btn-block"
             onClick={this.profileButton}
-          >
+          ><img src={prI} className="sIs" alt="Logo" />
             Profile
           </button>
           <br></br>
           <button
             type="button"
-            class="btn btn-secondary btn-lg btn-block"
+            class="btn btn-lg btn-block"
             onClick={this.yourchannelsButton}
-          >
+          ><img src={tV} className="sI" alt="Logo" />
             Your channels
           </button>
           <br></br>
           <button
             type="button"
-            class="btn btn-secondary btn-lg btn-block"
+            class="btn btn-lg btn-block"
             onClick={this.creatChannelButton}
-          >
+          ><img src={edI} className="sIs" alt="Logo" />
             Create channel
           </button>
           <br></br>
@@ -98,7 +102,7 @@ class Dashboard extends Component {
           ) : this.state.profile ? (
             <Profile users={this.props.users} userN={this.props.userN}/>
           ) : this.state.channels ? (
-            <Yourchannels users={this.props.users} userN={this.props.userN}/>
+            <Yourchannels users={this.props.users} userN={this.props.userN} />
           ) : this.state.creatChannel ? (
             <Createchannels users={this.props.users} userN={this.props.userN}/>
           ) : (

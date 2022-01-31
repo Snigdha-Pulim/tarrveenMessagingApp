@@ -1,11 +1,12 @@
 .sbutton{
-    background-color: blueviolet;
+    background-color: #d4c0ff;
+    color: grey;
     margin-top: 2cm;
     margin-bottom: 2cm;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    color: white;
+    font-weight: bold;
 }
 
 .sign_up_div{
@@ -13,12 +14,13 @@
 }
 
 .sbut{
-    background-color: blueviolet;
+    font-weight: bold;
+    background-color: #d4c0ffbd;
+    color: grey;
     margin: 0.5cm;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
-    color: white;
 }
 
 .frow{

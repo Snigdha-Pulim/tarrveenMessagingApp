@@ -1,0 +1,185 @@
+{
+    "users": [
+      {
+        "username": "gaya",
+        "email": "gaya@mail.com",
+        "password": "gaya",
+        "region": "Ahmedabad",
+        "channels": [
+          {
+            "name": "Front_End_Management_Application",
+            "noOfPostBySelf": 0,
+            "id": 1
+          },
+          {
+            "name": "back_end",
+            "noOfPostBySelf": 0,
+            "id": 2
+          }
+        ],
+        "totalNoOfPost": 0,
+        "id": 1
+      },
+      {
+        "username": "sam",
+        "email": "sam@mail.com",
+        "password": "sam",
+        "region": "Ahmedabad",
+        "channels": [
+          {
+            "name": "Front_End_Management_Application",
+            "noOfPostBySelf": 0,
+            "id": 1
+          }
+        ],
+        "totalNoOfPost": 0,
+        "id": 2
+      },
+      {
+        "username": "tara",
+        "email": "tara@mail.com",
+        "password": "tara",
+        "region": "Darjeeling",
+        "channels": [],
+        "totalNoOfPost": 0,
+        "id": 3
+      },
+      {
+        "username": "anitha",
+        "email": "anitha@mail.com",
+        "password": "anitha",
+        "region": "Aldona",
+        "channels": [
+          {
+            "name": "back_end",
+            "noOfPostBySelf": 0,
+            "id": 2
+          }
+        ],
+        "totalNoOfPost": 0,
+        "id": 4
+      },
+      {
+        "username": "metha",
+        "email": "metha@mail.com",
+        "password": "metha",
+        "region": "Narmada",
+        "channels": [
+          {
+            "name": "back_end",
+            "noOfPostBySelf": 0,
+            "id": 2
+          }
+        ],
+        "totalNoOfPost": 0,
+        "id": 5
+      },
+      {
+        "username": "esha",
+        "email": "esha@mail.com",
+        "password": "esha",
+        "region": "Ahmedabad",
+        "channels": [],
+        "totalNoOfPost": 0,
+        "id": 6
+      }
+    ],
+    "channels": [
+      {
+        "name": "Front_End_Management_Application",
+        "tags": [
+          "AWS",
+          "ReactJS",
+          "NodeJs",
+          "NextJs",
+          "MongoDB",
+          "ExpressJs"
+        ],
+        "listOfUsers": [
+          "gaya",
+          "sam",
+          "tara"
+        ],
+        "post": [],
+        "timeStamps": "16:29:14    31/01/2022",
+        "createdBy": "esha",
+        "noOfPosts": 0,
+        "id": 1
+      },
+      {
+        "name": "back_end",
+        "tags": [
+          "AWS",
+          "MongoDB"
+        ],
+        "listOfUsers": [
+          "gaya",
+          "metha",
+          "anitha"
+        ],
+        "post": [],
+        "timeStamps": "16:31:33    31/01/2022",
+        "createdBy": "esha",
+        "noOfPosts": 0,
+        "id": 2
+      }
+    ],
+    "tags": [
+      {
+        "name": "MongoDB",
+        "count": 1,
+        "id": 1
+      },
+      {
+        "name": "AWS",
+        "count": 1,
+        "id": 2
+      }
+    ],
+    "allTags": [
+      "Algorithm",
+      "Statistics",
+      "AWS",
+      "ReactJS",
+      "AngularJs",
+      "Javascript",
+      "NodeJs",
+      "NextJs",
+      "MongoDB",
+      "ExpressJs",
+      "Stack",
+      "IOT",
+      "AI",
+      "ML",
+      "Data Structures",
+      "C++",
+      "C",
+      "Java",
+      "Python",
+      "Web Development",
+      "App Development",
+      "Network"
+    ],
+    "regions": [
+      {
+        "name": "Ahmedabad",
+        "count": 3,
+        "id": 1
+      },
+      {
+        "name": "Darjeeling",
+        "count": 1,
+        "id": 2
+      },
+      {
+        "name": "Aldona",
+        "count": 1,
+        "id": 3
+      },
+      {
+        "name": "Narmada",
+        "count": 1,
+        "id": 4
+      }
+    ]
+  }

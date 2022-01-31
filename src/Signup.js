@@ -1,5 +1,6 @@
 import react, { Component } from "react";
 import axios from "axios";
+import Data from "./db.json";
 
 class Signup extends Component {
   constructor() {
@@ -33,12 +34,7 @@ class Signup extends Component {
       .then((response) => {
         this.setState({ region: response.data.data, regionsC: true });
       });
-    axios.get("http://localhost:3000/users").then((response) => {
-      this.setState({ users: response.data });
-    });
-    axios.get("http://localhost:3000/regions").then((response) => {
-      this.setState({ regionExistingList: response.data });
-    });
+    this.setState({ users: Data.users, regionExistingList: Data.region });
   };
 
   username = (e) => {
@@ -136,30 +132,38 @@ class Signup extends Component {
   };
   sendingDataToAPI = () => {
     let i,
+      j,
       regionE = false;
-    const response = axios.post("http://localhost:3000/users", {
-      username: this.state.username,
-      email: this.state.email,
-      password: this.state.password,
-      region: this.state.regionSelected,
-      channels: [],
-      totalNoOfPost: 0
-    });
+    Data.users = [
+      ...Data.users,
+      {
+        username: this.state.username,
+        email: this.state.email,
+        password: this.state.password,
+        region: this.state.regionSelected,
+        channels: [],
+        totalNoOfPost: 0
+      }
+    ];
     for (i = 0; i < this.state.regionExistingList.length; i++) {
       if (this.state.regionSelected == this.state.regionExistingList[i].name) {
         regionE = true;
-        axios.patch(
-          `http://localhost:3000/regions/${this.state.regionExistingList[i].id}`,
-          { count: this.state.regionExistingList[i].count +1}
-        );
+        for (j = 0; j < Data.regions; j++) {
+          if (Data.regions[j].id == this.state.regionExistingList[i].id) {
+            Data.regions[j].count = this.state.regionExistingList[i].count + 1;
+          }
+        }
         break;
       }
     }
     if (!regionE) {
-      axios.post("http://localhost:3000/regions", {
-        name: this.state.regionSelected,
-        count: 1
-      });
+      Data.regions = [
+        ...Data.regions,
+        {
+          name: this.state.regionSelected,
+          count: 1
+        }
+      ];
     }
     this.props.logedIn(this.state.username);
   };

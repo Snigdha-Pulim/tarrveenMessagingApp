@@ -3,6 +3,8 @@ import "./App.css";
 import Sign from "./Sign";
 import axios from "axios";
 import Dashboard from "./Dashboard";
+import Data from "./db.json";
+import logo from "./logo-1.png";
 
 class App extends Component {
   constructor() {
@@ -20,23 +22,15 @@ class App extends Component {
   }
 
   loginsuccessfull = (userName) => {
-    axios.get("http://localhost:3000/users").then((response) => {
-      this.setState({ users: response.data, dashboard: true, userN: userName });
-    });
+    this.setState({ users: Data.users, dashboard: true, userN: userName });
   };
 
   componentDidMount = () => {
-    axios.get("http://localhost:3000/users").then((response) => {
-      this.setState({ users: response.data });
-    });
-    axios.get("http://localhost:3000/channels").then((response) => {
-      this.setState({ channels: response.data });
-    });
-    axios.get("http://localhost:3000/tags").then((response) => {
-      this.setState({ tags: response.data });
-    });
-    axios.get("http://localhost:3000/regions").then((response) => {
-      this.setState({ regions: response.data });
+    this.setState({
+      users: Data.users,
+      channels: Data.channels,
+      tags: Data.tags,
+      regions: Data.regions
     });
   };
 
@@ -44,11 +38,16 @@ class App extends Component {
     return (
       <>
         {this.state.dashboard ? (
-          <Dashboard users={this.state.users} userN={this.state.userN}/>
+          <Dashboard users={this.state.users} userN={this.state.userN} />
         ) : (
-          <div className="signup_login container">
-            <Sign logedIn={this.loginsuccessfull} />
-          </div>
+          <>
+            <div className="logoOfPlace">
+              <img src={logo} alt="Logo" />
+            </div>
+            <div className="signup_login container">
+              <Sign logedIn={this.loginsuccessfull} />
+            </div>
+          </>
         )}
       </>
     );

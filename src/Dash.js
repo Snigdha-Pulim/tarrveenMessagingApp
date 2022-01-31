@@ -12,18 +12,30 @@ class Dash extends Component {
       <div className="container daC">
         <div className="row">
           <div className="col">
-            <div className="boxD">Trending Users</div>
+            <div className="boxD">
+              <div className="hedboxD">Trending Users</div>
+              not working at the movement
+            </div>
           </div>
           <div className="col">
-            <div className="boxD">Trending Region</div>
+            <div className="boxD">
+              <div className="hedboxD">Trending Region</div>
+              not working at the movement
+            </div>
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <div className="boxD">Trending Tags</div>
+            <div className="boxD">
+              <div className="hedboxD">Trending Tags</div>
+              not working at the movement
+            </div>
           </div>
           <div className="col">
-            <div className="boxD">Trending Channel</div>
+            <div className="boxD">
+              <div className="hedboxD">Trending Channel</div>
+              not working at the movement
+            </div>
           </div>
         </div>
       </div>

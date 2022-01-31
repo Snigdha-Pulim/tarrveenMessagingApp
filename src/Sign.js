@@ -24,12 +24,12 @@ class Sign extends Component {
       return (
         <>
           <div className="row">
-            <div className="col" style={{ background: "palevioletred" }}>
+            <div className="col" style={{ background: "palevioletred", borderTopLeftRadius: '25px' }}>
               <button className="sbutton btn" onClick={this.signUp}>
                 Sign Up
               </button>
             </div>
-            <div className="col">
+            <div className="col onedge">
               <button className="sbutton btn" onClick={this.signIn}>
                 Sign In
               </button>

@@ -8,7 +8,7 @@ class Yourchannels extends Component {
   componentDidMount = () => {};
 
   render() {
-    return (<>at Yourchannels</>
+    return (<div className="youC">NOT WORKING AT THE MOMENT</div>
     );
   }
 }

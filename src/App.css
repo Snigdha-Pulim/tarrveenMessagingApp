@@ -1,10 +1,26 @@
 body {
-    background-color: blueviolet;
-  }
+  background-color: white;
+}
 
-.signup_login{
-    width: 50%;
-    background-color: wheat;
-    margin: auto;
-    margin-top: 2cm;
+.signup_login {
+  border-radius:25px;
+  width: 50%;
+  background-color: wheat;
+  margin: auto;
+  margin-top: 1cm;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.onedge{
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: wheat;
+}
+
+.logoOfPlace{
+  width: 100%;
+  text-align: center;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
 }

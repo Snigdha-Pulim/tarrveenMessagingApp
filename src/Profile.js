@@ -15,6 +15,7 @@ class Profile extends Component {
   componentDidMount = () => {
     let i,
       length = this.props.users.length;
+    console.log(this.props.userN);
     for (i = 0; i < length; i++) {
       if (this.props.users[i].username == this.props.userN) {
         this.setState({
