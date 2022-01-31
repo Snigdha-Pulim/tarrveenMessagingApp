@@ -1,0 +1,84 @@
+li a {
+  display: block;
+  width: 60px;
+}
+.navB {
+  margin: 0;
+  padding: 0.5cm;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.rest {
+  float: right;
+}
+
+.daC {
+  margin-top: 2cm;
+}
+
+.boxD {
+  height: 5cm;
+  background-color: burlywood;
+  width: 76%;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 1cm;
+  border-radius: 25px;
+  padding: 0.5cm;
+  text-align: center;
+}
+
+.pc {
+  padding: 1cm;
+  border-radius: 15px;
+  margin-top: 3.5cm;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: cornflowerblue;
+}
+
+.inpc {
+  margin-bottom: 0.25cm;
+  background-color: crimson;
+  border-radius: 15px;
+  padding: 0.2cm;
+}
+
+.chanboxinpc {
+  max-height: 2.5cm;
+  overflow-y: scroll;
+}
+
+.tags {
+  height: 2.5cm;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.er {
+  color: red;
+  text-align: center;
+}
+
+.crea{
+  color: green;
+  text-align: center;
+  text-size-adjust: 1;
+}

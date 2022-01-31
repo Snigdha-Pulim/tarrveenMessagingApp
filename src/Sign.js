@@ -39,11 +39,11 @@ class Sign extends Component {
       );
     } else if (this.state.signInUpValue == 1) {
       return (
-        <Signup back={this.back}/>
+        <Signup back={this.back} logedIn={this.props.logedIn}/>
       );
     } else {
       return (
-        <SignIn back={this.back}/>
+        <SignIn back={this.back} logedIn={this.props.logedIn}/>
       );
     }
   }
